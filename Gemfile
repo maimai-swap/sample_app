@@ -19,12 +19,12 @@ group :development, :test do
   gem 'byebug', '5.0.0'
   gem 'web-console', '2.1.2'
   gem 'spring', '1.3.6'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails', '3.1.0'
 end
 
 group :test do
-  gem 'selenium-webdriver' , '2.46.2'
-  gem 'capybara' , '2.4.4'
+  gem 'selenium-webdriver','2.46.2'
+  gem 'capybara','2.4.4'
 end
 
 group :doc do
