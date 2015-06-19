@@ -1,14 +1,10 @@
-require 'capybara/rspec'
-
-# require 'capybara/rails'
-
 RSpec.configure do |config|
-  config.include Capybara::DSL
-  # config.include Rails.application.routes.url_helpers
-end
+  config.expect_with :rspec do |expectations|
+    expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+  end
 
-Capybara.configure do |config|
-  config.run_server = false
-  config.default_driver = :selenium
-  config.app_host = 'http://0.0.0.0:3000/' # localhost(rails s)
+  config.mock_with :rspec do |mocks|
+    mocks.verify_partial_doubles = true
+  end
+
 end
