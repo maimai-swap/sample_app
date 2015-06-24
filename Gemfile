@@ -13,6 +13,7 @@ gem 'jbuilder', '2.2.16'
 gem 'bootstrap-sass','3.3.5'
 gem 'sprockets','3.2.0'
 gem 'autoprefixer-rails' , '5.2.0.1'
+gem 'bcrypt','3.1.10'
 
 group :development, :test do
   gem 'sqlite3', '1.3.10'
